@@ -2,22 +2,22 @@ version: '3.8'
 
 services:
   movies:
-    images: mmohit1271/paytmmovie:latest
-    port:
-      - "81:80"
+    image: mmohit1271/paytmmovie:latest  # Corrected from 'images' to 'image'
+    ports:
+      - "81:80"  # Corrected 'port' to 'ports'
     deploy:
       replicas: 3
 
   train:
-    image: mmohit1271/paytmtrain:latest
-    port:
-      - "82:80"
+    image: mmohit1271/paytmtrain:latest  # Corrected from 'images' to 'image'
+    ports:
+      - "82:80"  # Corrected 'port' to 'ports'
     deploy:
       replicas: 3
 
   recharge:
-    image: mmohit1271/paytmrecharge:latest
-    port:
-      - "83:80"
+    image: mmohit1271/paytmrecharge:latest  # Corrected from 'images' to 'image'
+    ports:
+      - "83:80"  # Corrected 'port' to 'ports'
     deploy:
       replicas: 3
