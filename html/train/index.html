@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trains</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="../recharge/index.html">Recharge</a>
+        <a href="../movies/index.html">Movies</a>
+        <a href="../train/index.html">Trains</a>
+    </nav>
+
+    <div class="container">
+        <h2>Train Booking</h2>
+        <form>
+            <label for="source">From:</label>
+            <input type="text" id="source" placeholder="Enter source station">
+
+            <label for="destination">To:</label>
+            <input type="text" id="destination" placeholder="Enter destination station">
+
+            <label for="date">Date:</label>
+            <input type="date" id="date">
+
+            <label for="class">Class:</label>
+            <select id="class">
+                <option value="">Select Class</option>
+                <option value="sleeper">Sleeper</option>
+                <option value="ac">AC</option>
+                <option value="first_class">First Class</option>
+            </select>
+
+            <button type="button">Search Trains</button>
+        </form>
+    </div>
+
+    <script src="../../js/scripts.js"></script>
+</body>
+</html>
+
