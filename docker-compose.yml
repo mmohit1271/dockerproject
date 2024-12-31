@@ -2,30 +2,21 @@ version: '3.8'
 
 services:
   movies:
-    build:
-      context: .
-      args:
-        SERVICE_NAME: movies
+    image: mmohit1271/paytmmovie:latest  # Use the correct image reference
     ports:
       - "81:80"
     deploy:
       replicas: 3
 
   train:
-    build:
-      context: .
-      args:
-        SERVICE_NAME: train
+    image: mmohit1271/paytmtrain:latest  # Use the correct image reference
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
   recharge:
-    build:
-      context: .
-      args:
-        SERVICE_NAME: recharge
+    image: mmohit1271/paytmrecharge:latest  # Use the correct image reference
     ports:
       - "83:80"
     deploy:
